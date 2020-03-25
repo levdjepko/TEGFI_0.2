@@ -15,7 +15,7 @@ namespace TEGFI_3
 {
     public static class DBConnection
     {
-        public static void CheckConnection(string id, string password)
+        public static void CheckConnection(string id, string password, string user)
         {
             string connetionString = null;
             MySqlConnection cnn;
@@ -47,9 +47,14 @@ namespace TEGFI_3
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Can not open connection ! ");
+                MessageBox.Show("Can not open connection !");
                 return false;
             }
+        }
+
+        public static void GetAllData()
+        {
+            
         }
 
     }
