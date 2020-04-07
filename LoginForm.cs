@@ -1,12 +1,4 @@
-﻿using MySql.Data.MySqlClient;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
 using System.Windows.Forms;
 
 namespace TEGFI_3
@@ -25,9 +17,9 @@ namespace TEGFI_3
 
         private void connect_Button_Click(object sender, EventArgs e)
         {
-            if(DBConnection.ConnectToDatabase(loginTextBox.Text, passwordTextBox.Text))
+            if (DBConnection.ConnectToDatabase(loginTextBox.Text, passwordTextBox.Text))
             {
-                
+
                 this.Hide();
                 var form2 = new MainScreen();
                 form2.Closed += (s, args) => this.Close();

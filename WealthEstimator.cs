@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace TEGFI_3
+﻿namespace TEGFI_3
 {
     public static class WealthEstimator
     {
-        public static double EstimateTenYearsAmount_Monthly (double inputAmount)
+        public static double EstimateTenYearsAmount_Monthly(double inputAmount)
         {
             double totalAmount = 0.0;
 
