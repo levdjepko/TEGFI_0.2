@@ -46,7 +46,7 @@ namespace TEGFI_3
 
         public static void GetAllData()
         {
-
+            //used in a different way
         }
 
     }
