@@ -20,9 +20,9 @@ namespace TEGFI_3
         }
 
         private string ConnectionString { get; set; }
-        //this is the main connection string to our database
+        // this is the main connection string to our database
         public string UserName { get; set; }
-        //SELECT ALL command here
+        // SELECT ALL command here
                 
         private void loadExpenses_button_Click(object sender, EventArgs e)
         {
